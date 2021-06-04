@@ -11,7 +11,7 @@ Database: postgres
 
 ### tables
 #### relationships 
-`
+```
 create table relationships
 (
 from_uid bigint,
@@ -30,10 +30,11 @@ on relationships (from_uid, to_uid);
 
 create unique index relationships_id_uindex
 on relationships (id);
-`
+```
 
 #### users
-`create table users
+```
+create table users
 (
 uid  bigserial not null
 constraint users_pk
@@ -45,4 +46,4 @@ type text
 alter table users
 owner to postgres;
 
-`
+```
