@@ -4,11 +4,12 @@ server listen on :80
 ## db
 
 ### db_conf
+```
 User:     postgres
 Password: postgres
 Addr:     localhost:5432
 Database: postgres
-
+```
 ### tables
 #### relationships 
 ```
